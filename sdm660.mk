@@ -23,6 +23,10 @@
 
 # Inherit properties
 $(call inherit-product, $(LOCAL_PATH)/properties.mk)
+
+# Inherit  System.prop
+$(call inherit-product, $(LOCAL_PATH)/system.prop)
+
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Dirac
@@ -448,3 +452,15 @@ PRODUCT_BOOT_JARS += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
+
+# XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts \
+    init.gpuboost.rc \
+    init.gpuboost.sh \
+    init.cpuboost.rc \
+    init.cpuboost.sh \
+    init.parallax.rc \
+    init.parallax.sh \
+    init.spectrum.rc \
+    init.spectrum.sh
