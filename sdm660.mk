@@ -144,7 +144,8 @@ PRODUCT_BOOT_JARS += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.btconfigstore@1.0.vendor
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    libldacBT_dec
 
 # Camera
 PRODUCT_PACKAGES += \
